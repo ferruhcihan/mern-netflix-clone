@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./navbar.scss";
 import { ArrowDropDown, Notifications, Search } from "@mui/icons-material";
 
-const Navbar = () => {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   window.onscroll = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
           <Notifications className="icon" />
           <img
             src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
+            alt="user-logo"
           />
           <div className="profile">
             <ArrowDropDown className="icon" />
@@ -43,6 +43,4 @@ const Navbar = () => {
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}
