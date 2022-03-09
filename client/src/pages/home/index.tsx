@@ -3,7 +3,11 @@ import Navbar from "../../components/navbar";
 import Featured from "../../components/featured";
 import List from "../../components/list";
 
-export default function Home() {
+interface IHome {
+  type?: string;
+}
+
+export default function Home({ type }: IHome) {
   return (
     <div className="home">
       <Navbar />

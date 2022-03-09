@@ -24,10 +24,10 @@ function App() {
         {user && (
           <>
             <Route path="/movies">
-              <Home />
+              <Home type="movie" />
             </Route>
             <Route path="/series">
-              <Home />
+              <Home type="series" />
             </Route>
             <Route path="/watch">
               <Watch />
