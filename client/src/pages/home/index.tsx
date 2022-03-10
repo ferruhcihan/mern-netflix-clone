@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./home.scss";
 import Navbar from "../../components/navbar";
 import Featured from "../../components/featured";
@@ -8,6 +9,9 @@ interface IHome {
 }
 
 export default function Home({ type }: IHome) {
+  const [lists, setLists] = useState([]);
+  const [genre, setGenre] = useState(null);
+
   return (
     <div className="home">
       <Navbar />
